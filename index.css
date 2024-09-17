@@ -54,7 +54,43 @@
 
 .filter-btn{
     margin: 10px;
+    padding: 5px 10px;
     cursor: pointer;
     border: 0.5px solid black;
     border-radius: 5px;
+}
+
+.shimmer-container{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.shimmer-card{
+    margin: 20px;
+    width: 250px;
+    height: 400px;
+    background-color: #f0f0f0;
+
+}
+
+.login-btn{
+    margin: 0 10px;
+    padding: 0 20px;
+    cursor: pointer;
+}
+
+.filter{
+    display: flex;
+    align-items: center;
+}
+
+.search-box{
+    
+    padding: 5px 10px;
+}
+
+.search-btn{
+    padding: 5px 10px;
+    cursor: pointer;
+
 }
