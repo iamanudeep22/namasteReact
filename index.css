@@ -24,6 +24,12 @@
     cursor: pointer;
     font-size: 16px;
     font-weight: 500;
+    
+}
+
+.undln-none{
+    color: black;
+    text-decoration: none;
 }
 
 .res-card{
