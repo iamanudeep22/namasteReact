@@ -14,29 +14,29 @@ const Header = () => {
 
 
     return (
-        <div className="header">
+        <div className="flex justify-between items-center shadow-lg m-4">
             <div className="logo-container">
-                <img className="logo" src={LOGO_URL}/>
+                <img className="w-32" src={LOGO_URL}/>
             </div>
             <div className="nav-items">
-                <ul>
+                <ul className="flex p-4 m-4 gap-5 items-center">
                     <li>
                         Online Status : {onlineStatus? "🟢" : "🔴"}
                     </li>
                     <li>
-                        <Link className="undln-none" to="/">Home</Link>
+                        <Link className="hover:text-orange-500" to="/">Home</Link>
                     </li>
                     <li>
-                        <Link className="undln-none" to="/about">About Us</Link>
+                        <Link className="hover:text-orange-500" to="/about">About Us</Link>
                     </li>
                     <li>
-                        <Link className="undln-none" to="/contact">Contact</Link>
+                        <Link className="hover:text-orange-500" to="/contact">Contact</Link>
                     </li>
                     <li>
-                        <Link className="undln-none" to="/grocery">Grocery</Link>
+                        <Link className="hover:text-orange-500" to="/grocery">Grocery</Link>
                     </li>
-                    <li>Cart</li>
-                    <button className="login-btn" onClick={() => {
+                    <li className="hover:text-orange-500">Cart</li>
+                    <button className="p-1 m-1 w-24 border border-orange-500 text-orange-500 rounded-xl hover:bg-orange-400 hover:text-white" onClick={() => {
                         btnName === "Login" ? setBtnName("Logout") : setBtnName("Login");
                     }}>{btnName}</button>
                 </ul>
