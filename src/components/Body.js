@@ -26,7 +26,7 @@ const Body = () => {
         const data = await fetch(SWIGGY_API);
         const json = await data.json();
 
-        console.log(json);
+        // console.log(json);
         setListOfRestaurants(json?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants);
         setFilterRestaurant(json?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants);
     }
@@ -44,7 +44,7 @@ const Body = () => {
             <div className="flex gap-8 ml-8">
 
                 <div className="m-1">
-                    <input type="text" placeholder="Search for Restaurants" className="p-1 bg-gray-200 rounded-l-xl text-orange-500 outline-none" value={searchText} onChange={(e) => {
+                    <input type="text" data-testid="searchInput" placeholder="Search for Restaurants" className="p-1 bg-gray-200 rounded-l-xl text-orange-500 outline-none" value={searchText} onChange={(e) => {
                         setSearchText(e.target.value)
                     }}/>
                     <button className="p-1 w-20  rounded-r-xl bg-orange-400 text-white" onClick={() => {
